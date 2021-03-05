@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: 250px auto 150px;
+    grid-template-areas:
+    "nav nav nav"
+    ". main ."
+    "footer footer footer";
+    background-color: #fcf9f2;
+}
+
+nav {
+    background-image: url(../img/wood2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100%;
+    text-align: center;
+    border-bottom: black 1.5px solid;
+}
+
+
+.logo{
+    display: flex;
+    margin:auto auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+nav #logotext{
+    padding:0px;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.logo img{
+    max-width: 150px;
+}
+
+.globalnav-links {
+    width: 800px;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.globalnav-links li {
+    list-style: none;
+}
+
+.globalnav-links a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+a.thispage{
+    text-decoration: underline;
+}
+
+.localnav{
+    display: none;
+}
+
+.localnav li{
+    padding: 10px 3px;
+}
+
+.localnav a{
+    font-size: 14px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.globalnav-links li:hover ul{
+    display:block;
+    position:absolute;
+    background-image: url(../img/wood2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500%;
+    border:1.5px solid black;
+    border-top: 0px;
+
+}
+
+main{
+    grid-area: main;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headersec1 {
+    margin:0px;
+}
+.section1, .section2{
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.section1 img{
+    max-width: 400px;
+    padding-left: 20px;
+}
+.section1 p{
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.section2 img{
+    max-width: 400px;
+    padding-right: 20px;
+}
+.section2 p{
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 4px;
+}
+
+.column img{
+    padding: 4px;
+    max-width: 100%;
+}
+.craftman, .craftname {
+    display: none;
+}
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.column img:hover{
+    opacity: 0.4;
+}
+
+.column img:hover ~ .craftname {
+    display:block;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column img:hover ~ .craftman {
+    display:block;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact div {
+    grid-template-columns: min-content auto;
+}
+
+#contact div #message{
+    height:20px;
+}
+
+footer{
+    padding-top: 20px;
+    grid-area: footer;
+    background-image: url(../img/wood2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top: black 1.5px solid;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.minilogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.minilogo p{
+    font-style: italic;
+}
+
+.minilogo img{
+    max-width: 50px;
+}
