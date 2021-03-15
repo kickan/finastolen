@@ -96,6 +96,7 @@ nav a:hover{
 .globalnav-links li:hover ul{
     display:block;
     position:absolute;
+    z-index: 100;
     background-image: url(../img/wood2.jpg);
     background-repeat: no-repeat;
     background-position: center;
