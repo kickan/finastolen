@@ -182,6 +182,10 @@ main{
     transform: translate(-50%, -50%);
 }
 
+.introtext{
+    font-weight: bold;
+}
+
 #contact div {
     grid-template-columns: min-content auto;
 }
