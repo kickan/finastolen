@@ -23,7 +23,7 @@ body{
 }
 
 nav {
-    background-image: url(../img/wood2.jpg);
+    background-image: url(../img/wood2_500.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -97,7 +97,7 @@ nav a:hover{
     display:block;
     position:absolute;
     z-index: 100;
-    background-image: url(../img/wood2.jpg);
+    background-image: url(../img/wood2_500.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 500%;
@@ -112,9 +112,18 @@ main{
     margin-bottom: 20px;
 }
 
-.headersec1 {
-    margin:0px;
+.headersec{
+    padding-bottom: 20px;
 }
+
+.headersec a{
+    color: black;
+}
+
+.openinghours{
+    list-style: none;
+}
+
 .section1, .section2{
     display: flex;
     margin-top:20px;
@@ -186,18 +195,61 @@ main{
     font-weight: bold;
 }
 
-#contact div {
-    grid-template-columns: min-content auto;
+
+
+#contact fieldset{
+    border:none;
+
 }
 
-#contact div #message{
-    height:20px;
+#contact legend{
+    font-size: 2rem;
+}
+
+#contact fieldset div{
+    padding:10px;
+    display: grid;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+#name, #email {
+    max-width: 50ch;
+    border:none;
+    border-bottom: black solid 1px;
+    background-color:  #fcf9f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    padding:5px;
+}
+
+#message{
+    resize: none;
+    background-color:  #fcf9f2;
+    border:none;
+    border: black solid 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    padding:5px;
+}
+
+#name:focus, #email:focus, #message:focus{
+    outline:none;
+}
+#send{
+padding-left:20px;
+}
+#send input{
+    border-radius: 10px;
+    padding:5px;
+    background-color: #f3ede0;
+    color:black; 
 }
 
 footer{
     padding-top: 20px;
     grid-area: footer;
-    background-image: url(../img/wood2.jpg);
+    background-image: url(../img/wood2_500.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

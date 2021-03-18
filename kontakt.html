@@ -13,7 +13,7 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="img/logo.png">
+            <img src="img/logo_200.png">
             <h1 id="logotext">Fina Stolen</h1>
         </div>
         <ul class="globalnav-links">
@@ -33,11 +33,17 @@
         <h1 class="headersec1">Välkommen in till vår butik!</h1>
         <div class="section1">
             <div id="textsec1">
-                <p>Vi på fina stolen erbjuder egensnickrade möbler av högsta kvalite. Kom in till oss! </p>
-                <p>Vi har en ny och fräsch butik på storgatan 3 i stockholm. Där kan du titta på våra produkter. VI tar även emot beställningar som vi skräddarsyr efter dina behov och önskemål</p>
+                <p>Välkommen in till vår butik på Storgatan 3 i Stockholm. Här har vi kombinerat butik med snickeri. I butiken finns ett urval av färdigsnickrade produkter tillgängliga.</p>
+                <br>
+                <ul class="openinghours">
+                    <li>Öppettider:</li>
+                    <li>Mån-fre: 08:00-18:00</li>
+                    <li>Lör: 10:00-18:00</li>
+                    <li>Sön: Stängt</li>
+                </ul>
             </div>
             <div id="imgsec1">
-                <img src="img/shop.jpg" alt="bild på en hantverkare" id="charpenter1">
+                <img src="img/shop_600.jpg" alt="bild på en hantverkare" id="charpenter1">
             </div>
         </div>
         <hr>
@@ -46,16 +52,16 @@
                 <legend>Kontakta oss</legend>
                 <div id="formelem">
                     <div>
-                        <label for="name">Namn: </label>
+                        <label for="name">Namn*: </label>
                         <input type="text" name="name" id="name" required>
                     </div>
                     <div>
-                        <label for="email">Epost: </label>
+                        <label for="email">Epost*: </label>
                         <input type="email" name="email" id="email" required>
                     </div>
                     <div>
-                        <label for="message">Meddelande: </label>
-                        <input type="text" name="message" id="message" required>
+                        <label for="message">Meddelande*: </label>
+                        <textarea type="text" name="message" id="message" required rows="6"></textarea>
                     </div>
                 </div>
             </fieldset>
